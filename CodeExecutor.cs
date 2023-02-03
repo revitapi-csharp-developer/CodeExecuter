@@ -40,7 +40,6 @@ namespace ConsoleApp1
                                 {
                                     public static void Main()
                                     {
-                                        Console.WriteLine(""Handem canım aslanım bitanem :)"");
                                         int a = 5;
                                         int b = 3;
                                         Console.ReadLine();
@@ -95,7 +94,7 @@ namespace ConsoleApp1
                             }";
 
 
-
+            // Birbiri ile bağlantılı class yapılarında , veri compile edilirken sorunlar yaşanıyor.
             CodeExecutor.ExecuteCode(code2);
         }
     }
