@@ -93,9 +93,22 @@ namespace ConsoleApp1
                                 }
                             }";
 
+            string code3 = @"
+            try
+            {
+                int b = 10; 
+                int c = 0;
+                int d = b / c;
+                Console.WriteLine(d);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            ";
 
             // Birbiri ile bağlantılı class yapılarında , veri compile edilirken sorunlar yaşanıyor.
-            CodeExecutor.ExecuteCode(code2);
+            CodeExecutor.ExecuteCode(code3);
         }
     }
 }
